@@ -17,7 +17,7 @@ route.route.openshift.io/mlflow-tracking-operator exposed
 
 ##################################################################
 # Install the ML Flow service to train models and provide prediction
-oc new-app python~https://github.com/bfarr-rh/DancingRobot.git#master --context-dir=dance-ml
+oc new-app python~https://github.com/jaysonzhao/DancingRobot.git#master --context-dir=dance-ml
 oc expose svc/dancingrobot
 
 ###############################################################
@@ -26,7 +26,7 @@ oc expose svc/dancingrobot
 oc import-image openjdk/openjdk-11-rhel8 --from=registry.redhat.io/openjdk/openjdk-11-rhel8 --confirm
 
 # To build the image on OpenShift
-oc new-app quay.io/quarkus/ubi-quarkus-native-s2i:19.2.0.1~https://github.com/bfarr-rh/DancingRobot.git#master --context-dir=dance-rules --name=dance-rules-native
+oc new-app quay.io/quarkus/ubi-quarkus-native-s2i:19.2.0.1~https://github.com/jaysonzhao/DancingRobot.git#master --context-dir=dance-rules --name=dance-rules-native
 oc logs -f bc/dance-rules-native
 
 # To create the route
@@ -40,7 +40,7 @@ oc logs -f bc/dance-rules-native
 #https://quarkus.io/guides/openshift-s2i-guide
 
 # To build the image on OpenShift
-#oc new-app registry.access.redhat.com/redhat-openjdk-18/openjdk18-openshift~https://github.com/bfarr-rh/DancingRobot.git#master --context-dir=dance-rules --name=dance-rules
+#oc new-app registry.access.redhat.com/redhat-openjdk-18/openjdk18-openshift~https://github.com/jaysonzhao/DancingRobot.git#master --context-dir=dance-rules --name=dance-rules
 #oc logs -f bc/dance-rules
 
 # To create the route
@@ -68,7 +68,7 @@ oc create configmap danceui-config \
     --from-literal APP_NAME="My Gitea Instance" \
     --from-literal RUN_MODE=prod \
     --from-literal INSTALL_LOCK=true
-oc new-app nodeshift/centos7-s2i-nodejs:latest~https://github.com/bfarr-rh/DancingRobot.git#master --context-dir=dance-ui --name=danceui
+oc new-app nodeshift/centos7-s2i-nodejs:latest~https://github.com/jaysonzhao/DancingRobot.git#master --context-dir=dance-ui --name=danceui
 oc expose svc/danceui
 oc logs -f bc/danceui
 
@@ -85,7 +85,7 @@ oc logs -f bc/dance-translate
 oc expose svc/dance-translate
 
 # in 4.2 the above did not work due to image tag not recognised, using this below in the mean time
-#oc new-app registry.redhat.io/fuse7/fuse-java-openshift~https://github.com/bfarr-rh/DancingRobot.git#master --context-dir=dance-translate --name=dance-translate
+#oc new-app registry.redhat.io/fuse7/fuse-java-openshift~https://github.com/jaysonzhao/DancingRobot.git#master --context-dir=dance-translate --name=dance-translate
 #oc rsync dance-translate/sequences dance-translate-1-c5g8w:/deployments/
 
  oc new-build --name=dance-translate  registry.redhat.io/openjdk/openjdk-11-rhel8 --binary=true
