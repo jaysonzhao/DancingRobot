@@ -136,7 +136,7 @@ def train_data(data, experimentName):
     with mlflow.start_run():
         global lr 
         global loadedModelName
-
+        global poly
 
         train, test = train_test_split(data)
 
@@ -195,6 +195,7 @@ def train_data(data, experimentName):
 if __name__ == "__main__":
     global lr 
     global loadedModelName
+    global poly
     loadedModelName = ''
     app = make_app()
     app.listen(8080)
