@@ -170,7 +170,7 @@ def train_data(data, experimentName):
             r2score = r2_score(y_test, y_test_pred)
 
             # degree交叉验证
-             if min_rmse > poly_rmse:
+            if min_rmse > poly_rmse:
                  min_rmse = poly_rmse
                  min_deg = deg
                  score = r2score
