@@ -26,8 +26,8 @@ oc expose svc/dancingrobot
 oc import-image openjdk/openjdk-11-rhel8 --from=registry.redhat.io/openjdk/openjdk-11-rhel8 --confirm
 
 # To build the image on OpenShift
-#oc new-app quay.io/quarkus/ubi-quarkus-native-s2i:19.2.0.1~https://github.com/bfarr-rh/DancingRobot.git#master --context-dir=dance-rules --name=dance-rules-native
-#oc logs -f bc/dance-rules-native
+oc new-app quay.io/quarkus/ubi-quarkus-native-s2i:19.2.0.1~https://github.com/bfarr-rh/DancingRobot.git#master --context-dir=dance-rules --name=dance-rules-native
+oc logs -f bc/dance-rules-native
 
 # To create the route
 #oc expose svc/dance-rules-native
