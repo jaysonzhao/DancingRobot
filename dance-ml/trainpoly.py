@@ -11,6 +11,9 @@ import numpy as np
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import ElasticNet
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.linear_model import LinearRegression, Perceptron
+from sklearn.metrics import mean_squared_error, r2_score
 from io import StringIO
 
 import mlflow
@@ -104,7 +107,7 @@ def predict(values, experimentName):
     global lr 
     global loadedModelName
     test_values = pd.read_csv(StringIO(values), header=None)
-    prediction = lr.predict(test_values.drop(test_values.columns[11], axis=1))
+    prediction = lr.predict(poly.fit_transform(test_values.drop(test_values.columns[11], axis=1)))
 
     return prediction
 
@@ -129,29 +132,61 @@ def train_data(data, experimentName):
     train_y = train[["quality"]]
     test_y = test[["quality"]]
 
-    alpha = float(sys.argv[1]) if len(sys.argv) > 1 else 1.0
-    l1_ratio = float(sys.argv[2]) if len(sys.argv) > 2 else 1.0
-
+   
     with mlflow.start_run():
         global lr 
         global loadedModelName
-        lr = ElasticNet(alpha=alpha, l1_ratio=l1_ratio, random_state=42)
-        lr.fit(train_x, train_y)
+        global poly
 
-        predicted_qualities = lr.predict(test_x)
+        train, test = train_test_split(data)
 
-        (rmse, mae, r2) = eval_metrics(test_y, predicted_qualities)
+    # The predicted column is "quality" which is a scalar from [3, 9]
+        x_train = train.drop(["quality"], axis=1)
+        x_test = test.drop(["quality"], axis=1)
+        y_train = train[["quality"]]
+        y_test = test[["quality"]]
+        rmses = []
+        degrees = np.arange(1, 10)
+        min_rmse, min_deg, score = 1e10, 0, 0
 
-        print("Elasticnet model (alpha=%f, l1_ratio=%f):" % (alpha, l1_ratio))
-        print("  RMSE: %s" % rmse)
-        print("  MAE: %s" % mae)
-        print("  R2: %s" % r2)
+        for deg in degrees:
+            # 生成多项式特征集(如根据degree=3 ,生成 [[x,x**2,x**3]] )
+            poly = PolynomialFeatures(degree=deg, include_bias=False)
+            x_train_poly = poly.fit_transform(x_train)
 
-        mlflow.log_param("alpha", alpha)
-        mlflow.log_param("l1_ratio", l1_ratio)
-        mlflow.log_metric("rmse", rmse)
-        mlflow.log_metric("r2", r2)
-        mlflow.log_metric("mae", mae)
+            # 多项式拟合
+            poly_reg = LinearRegression()
+            poly_reg.fit(x_train_poly, y_train)
+            # print(poly_reg.coef_,poly_reg.intercept_) #系数及常数
+
+            # 测试集比较
+            x_test_poly = poly.fit_transform(x_test)
+            y_test_pred = poly_reg.predict(x_test_poly)
+
+            # mean_squared_error(y_true, y_pred) #均方误差回归损失,越小越好。
+            poly_rmse = np.sqrt(mean_squared_error(y_test, y_test_pred))
+            rmses.append(poly_rmse)
+            # r2 范围[0，1]，R2越接近1拟合越好。
+            r2score = r2_score(y_test, y_test_pred)
+
+            # degree交叉验证
+            if min_rmse > poly_rmse:
+                 min_rmse = poly_rmse
+                 min_deg = deg
+                 score = r2score
+            print('degree = %s, RMSE = %.2f ,r2_score = %.2f' % (deg, poly_rmse, r2score))
+
+
+        # 生成多项式特征集(如根据degree=3 ,生成 [[x,x**2,x**3]] )
+        poly = PolynomialFeatures(degree=min_deg, include_bias=False)
+        x_poly = poly.fit_transform(x_train)
+
+        # 多项式拟合
+        lr = LinearRegression()
+        lr.fit(x_poly, y_train)
+        mlflow.log_metric("rmse", poly_rmse)
+        mlflow.log_metric("r2", r2score)
+        mlflow.log_metric("degree", deg)
 
         mlflow.sklearn.log_model(lr, experimentName)
        
@@ -160,6 +195,7 @@ def train_data(data, experimentName):
 if __name__ == "__main__":
     global lr 
     global loadedModelName
+    global poly
     loadedModelName = ''
     app = make_app()
     app.listen(8080)
