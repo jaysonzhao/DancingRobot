@@ -107,7 +107,7 @@ def predict(values, experimentName):
     global lr 
     global loadedModelName
     test_values = pd.read_csv(StringIO(values), header=None)
-    prediction = lr.predict(poly.fit_transformtest_values))
+    prediction = lr.predict(poly.fit_transform(test_values))
 
     return prediction
 
@@ -136,10 +136,6 @@ def train_data(data, experimentName):
     with mlflow.start_run():
         global lr 
         global loadedModelName
-        lr = ElasticNet(alpha=alpha, l1_ratio=l1_ratio, random_state=42)
-        lr.fit(train_x, train_y)
-
-        predicted_qualities = lr.predict(test_x)
 
 
         train, test = train_test_split(data)
