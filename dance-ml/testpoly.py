@@ -58,12 +58,12 @@ x_poly = poly.fit_transform(x_train)
 # 多项式拟合
 poly_reg = LinearRegression()
 poly_reg.fit(x_poly, y_train)
-
-newy = poly_reg.predict(poly.fit_transform(x_test))
-
-plt.figure() # 实例化作图变量
-plt.title(filename+','+columnname) # 图像标题
-plt.xlabel('x') # x轴文本
-plt.ylabel('y') # y轴文本
-plt.plot(x_test, newy, 'k.')
-plt.show()
+temp = np.array([169.000,212.000,237.500,214.000,176.219,170.182,209.605,181.874,120.943,125.827,0.000])
+newy = poly_reg.predict(poly.fit_transform(temp.reshape(1,-1)))
+print(newy)
+#plt.figure() # 实例化作图变量
+#plt.title(filename+','+columnname) # 图像标题
+#plt.xlabel('x') # x轴文本
+#plt.ylabel('y') # y轴文本
+#plt.plot(temp, newy, 'k.')
+#plt.show()

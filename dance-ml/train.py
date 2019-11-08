@@ -107,7 +107,7 @@ def predict(values, experimentName):
     global lr 
     global loadedModelName
     test_values = pd.read_csv(StringIO(values), header=None)
-    prediction = lr.predict(poly.fit_transform(test_values))
+    prediction = lr.predict(poly.fit_transform(test_values.drop(test_values.columns[11], axis=1)))
 
     return prediction
 
