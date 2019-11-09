@@ -1,0 +1,7 @@
+/home/haozhao-redhat.com/DancingRobot/localproxyservice/src/main/java/com/redhat/demo/robotservice/Header.java
+/home/haozhao-redhat.com/DancingRobot/localproxyservice/src/main/java/com/redhat/demo/robotservice/model/Cmd.java
+/home/haozhao-redhat.com/DancingRobot/localproxyservice/src/main/java/com/redhat/demo/robotservice/rest/RobotEndPoint.java
+/home/haozhao-redhat.com/DancingRobot/localproxyservice/src/main/java/com/redhat/demo/robotservice/LocalRobotProxyService.java
+/home/haozhao-redhat.com/DancingRobot/localproxyservice/src/main/java/com/redhat/demo/robotservice/model/Command.java
+/home/haozhao-redhat.com/DancingRobot/localproxyservice/src/main/java/com/redhat/demo/robotservice/rest/Listener.java
+/home/haozhao-redhat.com/DancingRobot/localproxyservice/src/main/java/com/redhat/demo/robotservice/ProxyTestService.java
