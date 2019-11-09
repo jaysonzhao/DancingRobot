@@ -58,36 +58,21 @@ Method deploy_0 : V
     ALOAD 2
     LDC (Integer) 1
     AALOAD
-<<<<<<< HEAD
-    ASTORE 5
-=======
     ASTORE 4
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     ALOAD 1
-    LDC (String) "proxykey14"
+    LDC (String) "proxykey16"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-<<<<<<< HEAD
-    ASTORE 4
-    ALOAD 5
-    CHECKCAST java/util/Collection
-    ALOAD 4
-=======
     ASTORE 5
     ALOAD 4
     CHECKCAST java/util/Collection
     ALOAD 5
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     // Method descriptor: (Ljava/lang/Object;)Z
     INVOKEINTERFACE java/util/Collection#add
     POP
     ALOAD 2
     LDC (Integer) 2
-<<<<<<< HEAD
-    ALOAD 5
-=======
     ALOAD 4
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     AASTORE
     NEW io/quarkus/vertx/http/runtime/VertxHttpRecorder
     DUP
@@ -102,28 +87,20 @@ Method deploy_0 : V
     LDC (String) "proxykey40"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-<<<<<<< HEAD
-    ASTORE 8
-=======
-    ASTORE 10
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
+    ASTORE 9
     ALOAD 1
     LDC (String) "proxykey59"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 11
+    ASTORE 10
     ALOAD 2
     LDC (Integer) 2
     AALOAD
-<<<<<<< HEAD
-    ASTORE 10
-=======
-    ASTORE 8
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
+    ASTORE 11
     LDC (String) "NORMAL"
     // Method descriptor: (Ljava/lang/String;)Lio/quarkus/runtime/LaunchMode;
     INVOKESTATIC io/quarkus/runtime/LaunchMode#valueOf
-    ASTORE 9
+    ASTORE 8
     ALOAD 1
     LDC (String) "io.quarkus.runtime.ShutdownContext"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
@@ -133,21 +110,13 @@ Method deploy_0 : V
     LDC (Integer) 0
     AALOAD
     CHECKCAST io/quarkus/vertx/http/runtime/VertxHttpRecorder
-<<<<<<< HEAD
-    ALOAD 8
-    CHECKCAST io/quarkus/arc/runtime/BeanContainer
-    ALOAD 11
-    CHECKCAST io/vertx/core/Handler
-    ALOAD 10
-=======
-    ALOAD 10
-    CHECKCAST io/quarkus/arc/runtime/BeanContainer
-    ALOAD 11
-    CHECKCAST io/vertx/core/Handler
-    ALOAD 8
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
-    CHECKCAST java/util/List
     ALOAD 9
+    CHECKCAST io/quarkus/arc/runtime/BeanContainer
+    ALOAD 10
+    CHECKCAST io/vertx/core/Handler
+    ALOAD 11
+    CHECKCAST java/util/List
+    ALOAD 8
     ALOAD 7
     CHECKCAST io/quarkus/runtime/ShutdownContext
     // Method descriptor: (Lio/quarkus/arc/runtime/BeanContainer;Lio/vertx/core/Handler;Ljava/util/List;Lio/quarkus/runtime/LaunchMode;Lio/quarkus/runtime/ShutdownContext;)V

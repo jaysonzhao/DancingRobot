@@ -78,7 +78,7 @@ Method deploy_0 : V
     INVOKEVIRTUAL io/quarkus/vertx/http/runtime/cors/CORSRecorder#corsHandler
     ASTORE 6
     ALOAD 1
-    LDC (String) "proxykey12"
+    LDC (String) "proxykey16"
     ALOAD 6
     // Method descriptor: (Ljava/lang/String;Ljava/lang/Object;)V
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#putValue

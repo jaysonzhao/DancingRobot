@@ -86,7 +86,7 @@ Method registerClass60 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.FileRangeWriter"
+    LDC (String) "org.jboss.resteasy.plugins.providers.JaxrsFormProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -302,11 +302,7 @@ Method beforeAnalysis : V
     // Catch java/lang/Throwable by going to label11
     ** label10
     ** label13
-<<<<<<< HEAD
     LDC (String) "io.vertx.core.net.impl.PartialPooledByteBufAllocator"
-=======
-    LDC (String) "io.quarkus.runtime.generated.RunTimeConfig"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     LDC (Boolean) false
     ALOAD 2
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
@@ -331,11 +327,7 @@ Method beforeAnalysis : V
     // Catch java/lang/Throwable by going to label16
     ** label15
     ** label18
-<<<<<<< HEAD
     LDC (String) "io.vertx.core.http.impl.VertxHttp2ClientUpgradeCodec"
-=======
-    LDC (String) "io.vertx.core.net.impl.PartialPooledByteBufAllocator"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     LDC (Boolean) false
     ALOAD 2
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
@@ -360,11 +352,7 @@ Method beforeAnalysis : V
     // Catch java/lang/Throwable by going to label21
     ** label20
     ** label23
-<<<<<<< HEAD
     LDC (String) "io.netty.handler.ssl.ReferenceCountedOpenSslClientContext"
-=======
-    LDC (String) "io.vertx.core.http.impl.VertxHttp2ClientUpgradeCodec"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     LDC (Boolean) false
     ALOAD 2
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
@@ -389,11 +377,7 @@ Method beforeAnalysis : V
     // Catch java/lang/Throwable by going to label26
     ** label25
     ** label28
-<<<<<<< HEAD
     LDC (String) "io.netty.handler.ssl.JdkNpnApplicationProtocolNegotiator"
-=======
-    LDC (String) "io.netty.handler.ssl.ReferenceCountedOpenSslClientContext"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     LDC (Boolean) false
     ALOAD 2
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
@@ -418,11 +402,7 @@ Method beforeAnalysis : V
     // Catch java/lang/Throwable by going to label31
     ** label30
     ** label33
-<<<<<<< HEAD
     LDC (String) "io.netty.buffer.ByteBufAllocator"
-=======
-    LDC (String) "io.netty.handler.ssl.JdkNpnApplicationProtocolNegotiator"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     LDC (Boolean) false
     ALOAD 2
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
@@ -447,11 +427,7 @@ Method beforeAnalysis : V
     // Catch java/lang/Throwable by going to label36
     ** label35
     ** label38
-<<<<<<< HEAD
     LDC (String) "io.netty.buffer.PooledByteBufAllocator"
-=======
-    LDC (String) "io.netty.buffer.ByteBufAllocator"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     LDC (Boolean) false
     ALOAD 2
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
@@ -476,11 +452,7 @@ Method beforeAnalysis : V
     // Catch java/lang/Throwable by going to label41
     ** label40
     ** label43
-<<<<<<< HEAD
     LDC (String) "io.netty.handler.ssl.ReferenceCountedOpenSslEngine"
-=======
-    LDC (String) "io.netty.buffer.PooledByteBufAllocator"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     LDC (Boolean) false
     ALOAD 2
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
@@ -505,11 +477,7 @@ Method beforeAnalysis : V
     // Catch java/lang/Throwable by going to label46
     ** label45
     ** label48
-<<<<<<< HEAD
     LDC (String) "io.netty.handler.ssl.ConscryptAlpnSslEngine"
-=======
-    LDC (String) "io.netty.handler.ssl.ReferenceCountedOpenSslEngine"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     LDC (Boolean) false
     ALOAD 2
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
@@ -534,11 +502,7 @@ Method beforeAnalysis : V
     // Catch java/lang/Throwable by going to label51
     ** label50
     ** label53
-<<<<<<< HEAD
     LDC (String) "io.netty.buffer.ByteBufUtil"
-=======
-    LDC (String) "io.netty.handler.ssl.ConscryptAlpnSslEngine"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     LDC (Boolean) false
     ALOAD 2
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
@@ -563,11 +527,7 @@ Method beforeAnalysis : V
     // Catch java/lang/Throwable by going to label56
     ** label55
     ** label58
-<<<<<<< HEAD
     LDC (String) "io.netty.handler.codec.http.websocketx.WebSocket00FrameEncoder"
-=======
-    LDC (String) "io.netty.buffer.ByteBufUtil"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     LDC (Boolean) false
     ALOAD 2
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
@@ -592,11 +552,7 @@ Method beforeAnalysis : V
     // Catch java/lang/Throwable by going to label61
     ** label60
     ** label63
-<<<<<<< HEAD
     LDC (String) "io.netty.handler.ssl.util.ThreadLocalInsecureRandom"
-=======
-    LDC (String) "io.netty.handler.codec.http.websocketx.WebSocket00FrameEncoder"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     LDC (Boolean) false
     ALOAD 2
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
@@ -621,11 +577,7 @@ Method beforeAnalysis : V
     // Catch java/lang/Throwable by going to label66
     ** label65
     ** label68
-<<<<<<< HEAD
     LDC (String) "io.netty.buffer.ByteBufUtil$HexUtil"
-=======
-    LDC (String) "io.netty.handler.ssl.util.ThreadLocalInsecureRandom"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     LDC (Boolean) false
     ALOAD 2
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
@@ -650,11 +602,7 @@ Method beforeAnalysis : V
     // Catch java/lang/Throwable by going to label71
     ** label70
     ** label73
-<<<<<<< HEAD
     LDC (String) "io.netty.handler.codec.http.HttpObjectEncoder"
-=======
-    LDC (String) "io.netty.buffer.ByteBufUtil$HexUtil"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     LDC (Boolean) false
     ALOAD 2
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
@@ -679,11 +627,7 @@ Method beforeAnalysis : V
     // Catch java/lang/Throwable by going to label76
     ** label75
     ** label78
-<<<<<<< HEAD
     LDC (String) "io.netty.handler.codec.http2.DefaultHttp2FrameWriter"
-=======
-    LDC (String) "io.netty.handler.codec.http.HttpObjectEncoder"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     LDC (Boolean) false
     ALOAD 2
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
@@ -708,11 +652,7 @@ Method beforeAnalysis : V
     // Catch java/lang/Throwable by going to label81
     ** label80
     ** label83
-<<<<<<< HEAD
     LDC (String) "io.netty.handler.ssl.ReferenceCountedOpenSslContext"
-=======
-    LDC (String) "io.netty.handler.codec.http2.DefaultHttp2FrameWriter"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     LDC (Boolean) false
     ALOAD 2
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
@@ -737,11 +677,7 @@ Method beforeAnalysis : V
     // Catch java/lang/Throwable by going to label86
     ** label85
     ** label88
-<<<<<<< HEAD
     LDC (String) "io.netty.handler.codec.http2.Http2CodecUtil"
-=======
-    LDC (String) "io.netty.handler.ssl.ReferenceCountedOpenSslContext"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     LDC (Boolean) false
     ALOAD 2
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
@@ -766,11 +702,7 @@ Method beforeAnalysis : V
     // Catch java/lang/Throwable by going to label91
     ** label90
     ** label93
-<<<<<<< HEAD
     LDC (String) "io.quarkus.runtime.generated.RunTimeConfig"
-=======
-    LDC (String) "io.netty.handler.codec.http2.Http2CodecUtil"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     LDC (Boolean) false
     ALOAD 2
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
@@ -799,11 +731,7 @@ Method beforeAnalysis : V
     INVOKEVIRTUAL java/lang/Class#getClassLoader
     ASTORE 42
     ** label98
-<<<<<<< HEAD
     LDC (String) "io.quarkus.netty.runtime.graal.Holder_io_netty_util_concurrent_ScheduledFutureTask"
-=======
-    LDC (String) "java.util.concurrent.ThreadLocalRandom"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     LDC (Boolean) false
     ALOAD 42
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
@@ -828,11 +756,7 @@ Method beforeAnalysis : V
     // Catch java/lang/Throwable by going to label101
     ** label100
     ** label103
-<<<<<<< HEAD
     LDC (String) "java.util.concurrent.ThreadLocalRandom"
-=======
-    LDC (String) "io.quarkus.netty.runtime.graal.Holder_io_netty_util_concurrent_ScheduledFutureTask"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     LDC (Boolean) false
     ALOAD 42
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
@@ -878,7 +802,6 @@ Method beforeAnalysis : V
     INVOKEINTERFACE com/oracle/svm/core/jdk/proxy/DynamicProxyRegistry#addProxyClass
     LDC (Integer) 1
     ANEWARRAY java/lang/Class
-<<<<<<< HEAD
     ASTORE 50
     LDC (String) "org.jboss.resteasy.spi.ResteasyConfiguration"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
@@ -891,20 +814,6 @@ Method beforeAnalysis : V
     ALOAD 49
     CHECKCAST com/oracle/svm/core/jdk/proxy/DynamicProxyRegistry
     ALOAD 50
-=======
-    ASTORE 51
-    LDC (String) "org.jboss.resteasy.spi.ResteasyConfiguration"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 50
-    ALOAD 51
-    LDC (Integer) 0
-    ALOAD 50
-    AASTORE
-    ALOAD 49
-    CHECKCAST com/oracle/svm/core/jdk/proxy/DynamicProxyRegistry
-    ALOAD 51
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     // Method descriptor: ([Ljava/lang/Class;)V
     INVOKEINTERFACE com/oracle/svm/core/jdk/proxy/DynamicProxyRegistry#addProxyClass
     LDC (String) "META-INF/services/javax.ws.rs.ext.Providers"
@@ -937,13 +846,8 @@ Method beforeAnalysis : V
     ALOAD 52
     // Method descriptor: (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethod
-<<<<<<< HEAD
-    ASTORE 53
-    ALOAD 53
-=======
-    ASTORE 55
-    ALOAD 55
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
+    ASTORE 54
+    ALOAD 54
     CHECKCAST java/lang/reflect/AccessibleObject
     LDC (Boolean) true
     // Method descriptor: (Z)V
@@ -951,27 +855,18 @@ Method beforeAnalysis : V
     LDC (Type) Lcom/oracle/svm/core/jdk/LocalizationSupport;
     // Method descriptor: (Ljava/lang/Class;)Ljava/lang/Object;
     INVOKESTATIC org/graalvm/nativeimage/ImageSingletons#lookup
-<<<<<<< HEAD
     ASTORE 55
-=======
-    ASTORE 53
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     ** label108
     LDC (Integer) 1
     ANEWARRAY java/lang/Object
-    ASTORE 54
-    ALOAD 54
+    ASTORE 53
+    ALOAD 53
     LDC (Integer) 0
     LDC (String) "yasson-messages"
     AASTORE
-<<<<<<< HEAD
-    ALOAD 53
-    ALOAD 55
-=======
-    ALOAD 55
-    ALOAD 53
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     ALOAD 54
+    ALOAD 55
+    ALOAD 53
     // Method descriptor: (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     INVOKEVIRTUAL java/lang/reflect/Method#invoke
     POP
@@ -992,13 +887,8 @@ Method beforeAnalysis : V
     LDC (Integer) 0
     LDC (String) "messages"
     AASTORE
-<<<<<<< HEAD
-    ALOAD 53
+    ALOAD 54
     ALOAD 55
-=======
-    ALOAD 55
-    ALOAD 53
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     ALOAD 56
     // Method descriptor: (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     INVOKEVIRTUAL java/lang/reflect/Method#invoke
@@ -1273,11 +1163,7 @@ Method registerClass16 : V
 ) {
     ** label1
     ** label2
-<<<<<<< HEAD
     LDC (String) "org.jboss.resteasy.microprofile.client.async.AsyncInterceptorRxInvokerProvider"
-=======
-    LDC (String) "org.apache.commons.logging.impl.LogFactoryImpl"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1328,7 +1214,7 @@ Method registerClass48 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.jsonp.JsonArrayProvider"
+    LDC (String) "org.jboss.resteasy.plugins.providers.MultiValuedParamConverterProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1379,7 +1265,7 @@ Method registerClass36 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.interceptors.CacheControlFeature"
+    LDC (String) "org.jboss.resteasy.plugins.providers.ReactiveStreamProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1430,11 +1316,7 @@ Method registerClass24 : V
 ) {
     ** label1
     ** label2
-<<<<<<< HEAD
     LDC (String) "com.fasterxml.jackson.databind.ser.std.SqlDateSerializer"
-=======
-    LDC (String) "[Ljavax.ws.rs.ext.ReaderInterceptor;"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1445,11 +1327,7 @@ Method registerClass24 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-<<<<<<< HEAD
     ASTORE 3
-=======
-    POP
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
@@ -1468,13 +1346,10 @@ Method registerClass24 : V
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-<<<<<<< HEAD
     ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-=======
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     ** label3
     GOTO label4
     ** label5
@@ -1547,7 +1422,7 @@ Method registerClass12 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.eclipse.yasson.JsonBindingProvider"
+    LDC (String) "io.quarkus.vertx.core.runtime.VertxLogDelegateFactory"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1558,7 +1433,7 @@ Method registerClass12 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
+    ASTORE 3
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
@@ -1574,6 +1449,10 @@ Method registerClass12 : V
     // Method descriptor: ([Ljava/lang/Class;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
@@ -1598,7 +1477,7 @@ Method registerClass56 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.ReaderProvider"
+    LDC (String) "org.jboss.resteasy.plugins.providers.StreamingOutputProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1649,7 +1528,7 @@ Method registerClass44 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.FileProvider"
+    LDC (String) "org.jboss.resteasy.plugins.providers.SourceProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1751,7 +1630,7 @@ Method registerClass32 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.jsonp.JsonObjectProvider"
+    LDC (String) "org.jboss.resteasy.plugins.providers.sse.SseEventProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1857,11 +1736,7 @@ Method registerClass20 : V
 ) {
     ** label1
     ** label2
-<<<<<<< HEAD
     LDC (String) "[Ljavax.ws.rs.client.ClientResponseFilter;"
-=======
-    LDC (String) "org.jboss.resteasy.core.providerfactory.ResteasyProviderFactoryImpl"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2022,7 +1897,7 @@ Method registerClass52 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.StringTextStar"
+    LDC (String) "org.jboss.resteasy.plugins.providers.ByteArrayProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2073,7 +1948,7 @@ Method registerClass40 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.interceptors.ClientContentEncodingAnnotationFeature"
+    LDC (String) "org.jboss.resteasy.plugins.providers.CompletionStageProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2175,7 +2050,7 @@ Method registerClass61 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.InputStreamProvider"
+    LDC (String) "org.jboss.resteasy.plugins.providers.FileRangeWriter"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2332,7 +2207,7 @@ Method registerClass29 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.IIOImageProvider"
+    LDC (String) "org.jboss.resteasy.api.validation.ViolationReport"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2343,11 +2218,11 @@ Method registerClass29 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
+    ASTORE 3
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
+    ASTORE 4
     LDC (Integer) 1
     ANEWARRAY java/lang/Class
     ASTORE 1
@@ -2361,6 +2236,14 @@ Method registerClass29 : V
     ALOAD 2
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 3
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    LDC (Boolean) false
+    ALOAD 4
+    // Method descriptor: (Z[Ljava/lang/reflect/Field;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ** label3
     GOTO label4
@@ -2383,11 +2266,7 @@ Method registerClass17 : V
 ) {
     ** label1
     ** label2
-<<<<<<< HEAD
     LDC (String) "org.jboss.resteasy.core.providerfactory.ResteasyProviderFactoryImpl"
-=======
-    LDC (String) "org.apache.commons.logging.impl.Jdk14Logger"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2438,7 +2317,7 @@ Method registerClass49 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.DocumentProvider"
+    LDC (String) "org.jboss.resteasy.plugins.providers.jsonp.JsonArrayProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2489,7 +2368,7 @@ Method registerClass37 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.interceptors.ServerContentEncodingAnnotationFeature"
+    LDC (String) "org.jboss.resteasy.plugins.interceptors.CacheControlFeature"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2540,11 +2419,7 @@ Method registerClass25 : V
 ) {
     ** label1
     ** label2
-<<<<<<< HEAD
     LDC (String) "com.redhat.demo.robotservice.LocalRobotProxyService"
-=======
-    LDC (String) "org.jboss.resteasy.client.jaxrs.ResteasyClientBuilder"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2559,11 +2434,7 @@ Method registerClass25 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-<<<<<<< HEAD
     ASTORE 4
-=======
-    POP
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     LDC (Integer) 1
     ANEWARRAY java/lang/Class
     ASTORE 1
@@ -2582,13 +2453,10 @@ Method registerClass25 : V
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-<<<<<<< HEAD
     LDC (Boolean) false
     ALOAD 4
     // Method descriptor: (Z[Ljava/lang/reflect/Field;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-=======
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     ** label3
     GOTO label4
     ** label5
@@ -2712,11 +2580,7 @@ Method registerClass13 : V
 ) {
     ** label1
     ** label2
-<<<<<<< HEAD
     LDC (String) "org.apache.commons.logging.impl.LogFactoryImpl"
-=======
-    LDC (String) "com.fasterxml.jackson.module.jaxb.JaxbAnnotationIntrospector"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2727,11 +2591,7 @@ Method registerClass13 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-<<<<<<< HEAD
     POP
-=======
-    ASTORE 3
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
@@ -2750,13 +2610,6 @@ Method registerClass13 : V
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-<<<<<<< HEAD
-=======
-    ALOAD 3
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     ** label3
     GOTO label4
     ** label5
@@ -2778,7 +2631,7 @@ Method registerClass57 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.sse.SseEventSinkInterceptor"
+    LDC (String) "org.jboss.resteasy.plugins.providers.ReaderProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2829,7 +2682,7 @@ Method registerClass45 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.context.ContextFeature"
+    LDC (String) "org.jboss.resteasy.plugins.providers.FileProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2880,7 +2733,7 @@ Method registerClass33 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.DefaultTextPlain"
+    LDC (String) "org.jboss.resteasy.plugins.providers.jsonp.JsonObjectProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2986,11 +2839,7 @@ Method registerClass21 : V
 ) {
     ** label1
     ** label2
-<<<<<<< HEAD
     LDC (String) "[Ljavax.ws.rs.ext.ReaderInterceptor;"
-=======
-    LDC (String) "org.jboss.resteasy.client.jaxrs.internal.proxy.ProxyBuilderImpl"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -3143,7 +2992,7 @@ Method registerClass53 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "io.quarkus.resteasy.runtime.RolesFilterRegistrar"
+    LDC (String) "org.jboss.resteasy.plugins.providers.StringTextStar"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -3194,7 +3043,7 @@ Method registerClass41 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.DefaultNumberWriter"
+    LDC (String) "org.jboss.resteasy.plugins.interceptors.ClientContentEncodingAnnotationFeature"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -3351,7 +3200,7 @@ Method registerClass50 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.DefaultBooleanWriter"
+    LDC (String) "org.jboss.resteasy.plugins.providers.DocumentProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -3559,11 +3408,7 @@ Method registerClass18 : V
 ) {
     ** label1
     ** label2
-<<<<<<< HEAD
     LDC (String) "org.jboss.resteasy.client.jaxrs.internal.proxy.ProxyBuilderImpl"
-=======
-    LDC (String) "org.jboss.resteasy.microprofile.client.DefaultResponseExceptionMapper"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -3614,7 +3459,7 @@ Method registerClass38 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.FormUrlEncodedProvider"
+    LDC (String) "org.jboss.resteasy.plugins.interceptors.ServerContentEncodingAnnotationFeature"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -3775,11 +3620,7 @@ Method registerClass14 : V
 ) {
     ** label1
     ** label2
-<<<<<<< HEAD
     LDC (String) "org.apache.commons.logging.impl.Jdk14Logger"
-=======
-    LDC (String) "com.fasterxml.jackson.databind.ser.std.SqlDateSerializer"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -3790,11 +3631,7 @@ Method registerClass14 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-<<<<<<< HEAD
     POP
-=======
-    ASTORE 3
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
@@ -3813,13 +3650,6 @@ Method registerClass14 : V
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-<<<<<<< HEAD
-=======
-    ALOAD 3
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     ** label3
     GOTO label4
     ** label5
@@ -3841,7 +3671,7 @@ Method registerClass58 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.DataSourceProvider"
+    LDC (String) "org.jboss.resteasy.plugins.providers.sse.SseEventSinkInterceptor"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -3892,7 +3722,7 @@ Method registerClass46 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.interceptors.MessageSanitizerContainerResponseFilter"
+    LDC (String) "org.jboss.resteasy.context.ContextFeature"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -3943,7 +3773,7 @@ Method registerClass34 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.client.jaxrs.internal.CompletionStageRxInvokerProvider"
+    LDC (String) "org.jboss.resteasy.plugins.providers.DefaultTextPlain"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -4049,11 +3879,7 @@ Method registerClass22 : V
 ) {
     ** label1
     ** label2
-<<<<<<< HEAD
     LDC (String) "org.jboss.resteasy.client.jaxrs.ResteasyClientBuilder"
-=======
-    LDC (String) "[Ljavax.ws.rs.client.ClientRequestFilter;"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -4064,11 +3890,7 @@ Method registerClass22 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-<<<<<<< HEAD
     ASTORE 3
-=======
-    POP
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
@@ -4087,13 +3909,10 @@ Method registerClass22 : V
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-<<<<<<< HEAD
     ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-=======
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     ** label3
     GOTO label4
     ** label5
@@ -4268,7 +4087,7 @@ Method registerClass54 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.jsonp.JsonStructureProvider"
+    LDC (String) "io.quarkus.resteasy.runtime.RolesFilterRegistrar"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -4319,7 +4138,7 @@ Method registerClass42 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.jsonb.JsonBindingProvider"
+    LDC (String) "org.jboss.resteasy.plugins.providers.DefaultNumberWriter"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -4421,7 +4240,7 @@ Method registerClass30 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.sse.SseEventOutputProvider"
+    LDC (String) "org.jboss.resteasy.plugins.providers.IIOImageProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -4527,7 +4346,7 @@ Method registerClass62 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.jsonp.JsonValueProvider"
+    LDC (String) "org.jboss.resteasy.plugins.providers.InputStreamProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -4578,7 +4397,7 @@ Method registerClass8 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "io.quarkus.vertx.core.runtime.VertxLogDelegateFactory"
+    LDC (String) "org.eclipse.yasson.JsonBindingProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -4589,7 +4408,7 @@ Method registerClass8 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    ASTORE 3
+    POP
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
@@ -4605,10 +4424,6 @@ Method registerClass8 : V
     // Method descriptor: ([Ljava/lang/Class;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
@@ -4747,11 +4562,7 @@ Method registerClass19 : V
 ) {
     ** label1
     ** label2
-<<<<<<< HEAD
     LDC (String) "[Ljavax.ws.rs.client.ClientRequestFilter;"
-=======
-    LDC (String) "org.jboss.resteasy.microprofile.client.async.AsyncInterceptorRxInvokerProvider"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -4802,7 +4613,7 @@ Method registerClass39 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.CompletionStageProvider"
+    LDC (String) "org.jboss.resteasy.plugins.providers.FormUrlEncodedProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -4912,11 +4723,7 @@ Method registerClass15 : V
 ) {
     ** label1
     ** label2
-<<<<<<< HEAD
     LDC (String) "org.jboss.resteasy.microprofile.client.DefaultResponseExceptionMapper"
-=======
-    LDC (String) "com.redhat.demo.robotservice.LocalRobotProxyService"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -4927,19 +4734,11 @@ Method registerClass15 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-<<<<<<< HEAD
     POP
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
     POP
-=======
-    ASTORE 3
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    ASTORE 4
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     LDC (Integer) 1
     ANEWARRAY java/lang/Class
     ASTORE 1
@@ -4954,17 +4753,6 @@ Method registerClass15 : V
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-<<<<<<< HEAD
-=======
-    ALOAD 3
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    LDC (Boolean) false
-    ALOAD 4
-    // Method descriptor: (Z[Ljava/lang/reflect/Field;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     ** label3
     GOTO label4
     ** label5
@@ -4986,7 +4774,7 @@ Method registerClass59 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.JaxrsFormProvider"
+    LDC (String) "org.jboss.resteasy.plugins.providers.DataSourceProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -5037,7 +4825,7 @@ Method registerClass47 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.MultiValuedParamConverterProvider"
+    LDC (String) "org.jboss.resteasy.plugins.interceptors.MessageSanitizerContainerResponseFilter"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -5088,7 +4876,7 @@ Method registerClass35 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.ReactiveStreamProvider"
+    LDC (String) "org.jboss.resteasy.client.jaxrs.internal.CompletionStageRxInvokerProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -5194,11 +4982,7 @@ Method registerClass23 : V
 ) {
     ** label1
     ** label2
-<<<<<<< HEAD
     LDC (String) "com.fasterxml.jackson.module.jaxb.JaxbAnnotationIntrospector"
-=======
-    LDC (String) "[Ljavax.ws.rs.client.ClientResponseFilter;"
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -5209,11 +4993,7 @@ Method registerClass23 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-<<<<<<< HEAD
     ASTORE 3
-=======
-    POP
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
@@ -5232,13 +5012,10 @@ Method registerClass23 : V
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-<<<<<<< HEAD
     ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-=======
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     ** label3
     GOTO label4
     ** label5
@@ -5362,7 +5139,7 @@ Method registerClass55 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.StreamingOutputProvider"
+    LDC (String) "org.jboss.resteasy.plugins.providers.jsonp.JsonStructureProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -5413,7 +5190,7 @@ Method registerClass43 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.SourceProvider"
+    LDC (String) "org.jboss.resteasy.plugins.providers.jsonb.JsonBindingProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -5515,7 +5292,7 @@ Method registerClass31 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.sse.SseEventProvider"
+    LDC (String) "org.jboss.resteasy.plugins.providers.sse.SseEventOutputProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -5621,7 +5398,7 @@ Method registerClass63 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.api.validation.ViolationReport"
+    LDC (String) "org.jboss.resteasy.plugins.providers.jsonp.JsonValueProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -5632,11 +5409,11 @@ Method registerClass63 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    ASTORE 3
+    POP
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    ASTORE 4
+    POP
     LDC (Integer) 1
     ANEWARRAY java/lang/Class
     ASTORE 1
@@ -5650,14 +5427,6 @@ Method registerClass63 : V
     ALOAD 2
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    ALOAD 3
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    LDC (Boolean) false
-    ALOAD 4
-    // Method descriptor: (Z[Ljava/lang/reflect/Field;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ** label3
     GOTO label4
@@ -5731,7 +5500,7 @@ Method registerClass51 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.jboss.resteasy.plugins.providers.ByteArrayProvider"
+    LDC (String) "org.jboss.resteasy.plugins.providers.DefaultBooleanWriter"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0

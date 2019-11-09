@@ -77,23 +77,18 @@ Method deploy_0 : V
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
     ASTORE 8
     ALOAD 1
-    LDC (String) "proxykey12"
+    LDC (String) "proxykey20"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-<<<<<<< HEAD
     ASTORE 10
-=======
-    ASTORE 13
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     ALOAD 1
     LDC (String) "proxykey56"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 9
+    ASTORE 13
     ALOAD 2
     LDC (Integer) 2
     AALOAD
-<<<<<<< HEAD
     ASTORE 12
     ALOAD 2
     LDC (Integer) 3
@@ -102,45 +97,22 @@ Method deploy_0 : V
     ALOAD 2
     LDC (Integer) 4
     AALOAD
-    ASTORE 13
-=======
-    ASTORE 11
-    ALOAD 2
-    LDC (Integer) 3
-    AALOAD
-    ASTORE 10
-    ALOAD 2
-    LDC (Integer) 4
-    AALOAD
-    ASTORE 12
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
+    ASTORE 9
     ALOAD 2
     LDC (Integer) 0
     AALOAD
     CHECKCAST io/quarkus/undertow/runtime/UndertowDeploymentRecorder
     ALOAD 8
     CHECKCAST io/quarkus/runtime/ShutdownContext
-<<<<<<< HEAD
     ALOAD 10
     CHECKCAST java/util/concurrent/ExecutorService
-    ALOAD 9
+    ALOAD 13
     CHECKCAST io/undertow/servlet/api/DeploymentManager
     ALOAD 12
     CHECKCAST java/util/List
     ALOAD 11
     CHECKCAST io/quarkus/vertx/http/runtime/HttpConfiguration
-    ALOAD 13
-=======
-    ALOAD 13
-    CHECKCAST java/util/concurrent/ExecutorService
     ALOAD 9
-    CHECKCAST io/undertow/servlet/api/DeploymentManager
-    ALOAD 11
-    CHECKCAST java/util/List
-    ALOAD 10
-    CHECKCAST io/quarkus/vertx/http/runtime/HttpConfiguration
-    ALOAD 12
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     CHECKCAST io/quarkus/undertow/runtime/ServletRuntimeConfig
     // Method descriptor: (Lio/quarkus/runtime/ShutdownContext;Ljava/util/concurrent/ExecutorService;Lio/undertow/servlet/api/DeploymentManager;Ljava/util/List;Lio/quarkus/vertx/http/runtime/HttpConfiguration;Lio/quarkus/undertow/runtime/ServletRuntimeConfig;)Lio/vertx/core/Handler;
     INVOKEVIRTUAL io/quarkus/undertow/runtime/UndertowDeploymentRecorder#startUndertow

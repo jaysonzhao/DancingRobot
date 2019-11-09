@@ -1,7 +1,2 @@
-<<<<<<< HEAD
 org\acme\quickstart\RobotCommandIT.class
 org\acme\quickstart\RobotCommandTest.class
-=======
-org/acme/quickstart/RobotCommandTest.class
-org/acme/quickstart/RobotCommandIT.class
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9

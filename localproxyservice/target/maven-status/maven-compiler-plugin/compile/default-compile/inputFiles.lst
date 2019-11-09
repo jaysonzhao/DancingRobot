@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 E:\gitrepo\DancingRobot\localproxyservice\src\main\java\com\redhat\demo\robotservice\Header.java
 E:\gitrepo\DancingRobot\localproxyservice\src\main\java\com\redhat\demo\robotservice\model\Cmd.java
 E:\gitrepo\DancingRobot\localproxyservice\src\main\java\com\redhat\demo\robotservice\model\Command.java
@@ -6,12 +5,3 @@ E:\gitrepo\DancingRobot\localproxyservice\src\main\java\com\redhat\demo\robotser
 E:\gitrepo\DancingRobot\localproxyservice\src\main\java\com\redhat\demo\robotservice\rest\Listener.java
 E:\gitrepo\DancingRobot\localproxyservice\src\main\java\com\redhat\demo\robotservice\rest\RobotEndPoint.java
 E:\gitrepo\DancingRobot\localproxyservice\src\main\java\com\redhat\demo\robotservice\LocalRobotProxyService.java
-=======
-/home/haozhao-redhat.com/DancingRobot/localproxyservice/src/main/java/com/redhat/demo/robotservice/Header.java
-/home/haozhao-redhat.com/DancingRobot/localproxyservice/src/main/java/com/redhat/demo/robotservice/model/Cmd.java
-/home/haozhao-redhat.com/DancingRobot/localproxyservice/src/main/java/com/redhat/demo/robotservice/rest/RobotEndPoint.java
-/home/haozhao-redhat.com/DancingRobot/localproxyservice/src/main/java/com/redhat/demo/robotservice/LocalRobotProxyService.java
-/home/haozhao-redhat.com/DancingRobot/localproxyservice/src/main/java/com/redhat/demo/robotservice/model/Command.java
-/home/haozhao-redhat.com/DancingRobot/localproxyservice/src/main/java/com/redhat/demo/robotservice/rest/Listener.java
-/home/haozhao-redhat.com/DancingRobot/localproxyservice/src/main/java/com/redhat/demo/robotservice/ProxyTestService.java
->>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
