@@ -1,0 +1,733 @@
+apiVersion: v1
+items:
+- apiVersion: build.openshift.io/v1
+  kind: BuildConfig
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: "2019-11-08T02:49:21Z"
+    labels:
+      app: dance-rules-native
+    name: dance-rules-native
+    namespace: robotdance
+    resourceVersion: "2338863"
+    selfLink: /apis/build.openshift.io/v1/namespaces/robotdance/buildconfigs/dance-rules-native
+    uid: 5db2a32c-01d2-11ea-ae2b-0a580a80000c
+  spec:
+    failedBuildsHistoryLimit: 5
+    nodeSelector: null
+    output:
+      to:
+        kind: ImageStreamTag
+        name: dance-rules-native:latest
+    postCommit: {}
+    resources: {}
+    runPolicy: Serial
+    source:
+      contextDir: dance-rules
+      git:
+        ref: master
+        uri: https://github.com/jaysonzhao/DancingRobot.git
+      type: Git
+    strategy:
+      sourceStrategy:
+        from:
+          kind: ImageStreamTag
+          name: ubi-quarkus-native-s2i:19.2.0.1
+      type: Source
+    successfulBuildsHistoryLimit: 5
+    triggers:
+    - github:
+        secret: hcYOhWyZVvqoWNQmqOB-
+      type: GitHub
+    - generic:
+        secret: HfQeEKL0yvBHl_t5f5of
+      type: Generic
+    - type: ConfigChange
+    - imageChange:
+        lastTriggeredImageID: quay.io/quarkus/ubi-quarkus-native-s2i@sha256:962362dd9203d577e34167b27a5155e7babecc071360cbe01298994e23ab84b0
+      type: ImageChange
+  status:
+    lastVersion: 2
+- apiVersion: build.openshift.io/v1
+  kind: BuildConfig
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewBuild
+    creationTimestamp: "2019-11-08T01:55:14Z"
+    labels:
+      build: dance-translate
+    name: dance-translate
+    namespace: robotdance
+    resourceVersion: "2783131"
+    selfLink: /apis/build.openshift.io/v1/namespaces/robotdance/buildconfigs/dance-translate
+    uid: ce2c3ccf-01ca-11ea-ae2b-0a580a80000c
+  spec:
+    failedBuildsHistoryLimit: 5
+    nodeSelector: null
+    output:
+      to:
+        kind: ImageStreamTag
+        name: dance-translate:latest
+    postCommit: {}
+    resources: {}
+    runPolicy: Serial
+    source:
+      binary: {}
+      type: Binary
+    strategy:
+      sourceStrategy:
+        from:
+          kind: ImageStreamTag
+          name: openjdk-8-rhel8:latest
+      type: Source
+    successfulBuildsHistoryLimit: 5
+    triggers:
+    - github:
+        secret: Bq1b1hVOPoEs1y8qLW2H
+      type: GitHub
+    - generic:
+        secret: IL6jvefxrzBDX0iBu11w
+      type: Generic
+  status:
+    lastVersion: 8
+- apiVersion: build.openshift.io/v1
+  kind: BuildConfig
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: "2019-11-08T01:15:32Z"
+    labels:
+      app: danceui
+    name: danceui
+    namespace: robotdance
+    resourceVersion: "2888175"
+    selfLink: /apis/build.openshift.io/v1/namespaces/robotdance/buildconfigs/danceui
+    uid: 425ee4b6-01c5-11ea-ae2b-0a580a80000c
+  spec:
+    failedBuildsHistoryLimit: 5
+    nodeSelector: null
+    output:
+      to:
+        kind: ImageStreamTag
+        name: danceui:latest
+    postCommit: {}
+    resources: {}
+    runPolicy: Serial
+    source:
+      contextDir: dance-ui
+      git:
+        ref: master
+        uri: https://github.com/jaysonzhao/DancingRobot.git
+      type: Git
+    strategy:
+      sourceStrategy:
+        from:
+          kind: ImageStreamTag
+          name: centos7-s2i-nodejs:latest
+      type: Source
+    successfulBuildsHistoryLimit: 5
+    triggers:
+    - github:
+        secret: eX7Yf2jBhL5-fko7gUOS
+      type: GitHub
+    - generic:
+        secret: Qz2otE7Mce4J2lX7FIvm
+      type: Generic
+    - type: ConfigChange
+    - imageChange:
+        lastTriggeredImageID: nodeshift/centos7-s2i-nodejs@sha256:16d133f088ce58e12dc7d9188cb567b9d54b322be3d18906ed8c033ff30606c6
+      type: ImageChange
+  status:
+    lastVersion: 7
+- apiVersion: build.openshift.io/v1
+  kind: BuildConfig
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: "2019-11-08T03:02:03Z"
+    labels:
+      app: dancingrobot
+    name: dancingrobot
+    namespace: robotdance
+    resourceVersion: "2395002"
+    selfLink: /apis/build.openshift.io/v1/namespaces/robotdance/buildconfigs/dancingrobot
+    uid: 23f3093f-01d4-11ea-ae2b-0a580a80000c
+  spec:
+    failedBuildsHistoryLimit: 5
+    nodeSelector: null
+    output:
+      to:
+        kind: ImageStreamTag
+        name: dancingrobot:latest
+    postCommit: {}
+    resources: {}
+    runPolicy: Serial
+    source:
+      contextDir: dance-ml
+      git:
+        ref: master
+        uri: https://github.com/jaysonzhao/DancingRobot.git
+      type: Git
+    strategy:
+      sourceStrategy:
+        from:
+          kind: ImageStreamTag
+          name: python:3.6
+          namespace: openshift
+      type: Source
+    successfulBuildsHistoryLimit: 5
+    triggers:
+    - github:
+        secret: yrchml0nx1jdj8IfBd7O
+      type: GitHub
+    - generic:
+        secret: IKYQm25XkBSm9Ob-gB58
+      type: Generic
+    - type: ConfigChange
+    - imageChange:
+        lastTriggeredImageID: image-registry.openshift-image-registry.svc:5000/openshift/python@sha256:5a0e3ccff83b3d2d98b9595533ef3d5f3ac47dfe54989b20c7a6727ec35bbfad
+      type: ImageChange
+  status:
+    lastVersion: 7
+- apiVersion: build.openshift.io/v1
+  kind: BuildConfig
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: "2019-11-07T14:01:10Z"
+    labels:
+      app: quarkus-jvm-demo
+    name: quarkus-jvm-demo
+    namespace: robotdance
+    resourceVersion: "1883573"
+    selfLink: /apis/build.openshift.io/v1/namespaces/robotdance/buildconfigs/quarkus-jvm-demo
+    uid: 0d28d2bd-0167-11ea-91cd-0a580a8001de
+  spec:
+    failedBuildsHistoryLimit: 5
+    nodeSelector: null
+    output:
+      to:
+        kind: ImageStreamTag
+        name: quarkus-jvm-demo:latest
+    postCommit: {}
+    resources: {}
+    runPolicy: Serial
+    source:
+      git:
+        uri: https://github.com/rafaeltuelho/quarkus-demo.git
+      type: Git
+    strategy:
+      sourceStrategy:
+        env:
+        - name: ARTIFACT_COPY_ARGS
+          value: -p -r lib/ *-runner.jar
+        from:
+          kind: ImageStreamTag
+          name: openjdk-11-rhel8:latest
+          namespace: robotdance
+      type: Source
+    successfulBuildsHistoryLimit: 5
+    triggers:
+    - github:
+        secret: yYj4OT23p0OyLQOGCoZm
+      type: GitHub
+    - generic:
+        secret: 7swl_1zUsPi0pUgDBUb1
+      type: Generic
+    - type: ConfigChange
+    - imageChange:
+        lastTriggeredImageID: registry.redhat.io/openjdk/openjdk-11-rhel8@sha256:8d2177bdfc307bb023ce8b9438f2c1d4bd024fb15049a50e2672aa8c7fa69745
+      type: ImageChange
+  status:
+    lastVersion: 1
+- apiVersion: apps.openshift.io/v1
+  kind: DeploymentConfig
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: "2019-11-08T02:49:21Z"
+    generation: 3
+    labels:
+      app: dance-rules-native
+    name: dance-rules-native
+    namespace: robotdance
+    resourceVersion: "2881399"
+    selfLink: /apis/apps.openshift.io/v1/namespaces/robotdance/deploymentconfigs/dance-rules-native
+    uid: 5db98f64-01d2-11ea-ae2b-0a580a80000c
+  spec:
+    replicas: 1
+    revisionHistoryLimit: 10
+    selector:
+      app: dance-rules-native
+      deploymentconfig: dance-rules-native
+    strategy:
+      activeDeadlineSeconds: 21600
+      resources: {}
+      rollingParams:
+        intervalSeconds: 1
+        maxSurge: 25%
+        maxUnavailable: 25%
+        timeoutSeconds: 600
+        updatePeriodSeconds: 1
+      type: Rolling
+    template:
+      metadata:
+        annotations:
+          openshift.io/generated-by: OpenShiftNewApp
+        creationTimestamp: null
+        labels:
+          app: dance-rules-native
+          deploymentconfig: dance-rules-native
+      spec:
+        containers:
+        - image: image-registry.openshift-image-registry.svc:5000/robotdance/dance-rules-native@sha256:7178dc1865e9351c64391de9f718bf240af305623f20ef937d4bcb139d8aa8eb
+          imagePullPolicy: Always
+          name: dance-rules-native
+          ports:
+          - containerPort: 8080
+            protocol: TCP
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+    test: false
+    triggers:
+    - type: ConfigChange
+    - imageChangeParams:
+        automatic: true
+        containerNames:
+        - dance-rules-native
+        from:
+          kind: ImageStreamTag
+          name: dance-rules-native:latest
+          namespace: robotdance
+        lastTriggeredImage: image-registry.openshift-image-registry.svc:5000/robotdance/dance-rules-native@sha256:7178dc1865e9351c64391de9f718bf240af305623f20ef937d4bcb139d8aa8eb
+      type: ImageChange
+  status:
+    availableReplicas: 1
+    conditions:
+    - lastTransitionTime: "2019-11-08T13:49:27Z"
+      lastUpdateTime: "2019-11-08T13:49:30Z"
+      message: replication controller "dance-rules-native-2" successfully rolled out
+      reason: NewReplicationControllerAvailable
+      status: "True"
+      type: Progressing
+    - lastTransitionTime: "2019-11-09T10:57:54Z"
+      lastUpdateTime: "2019-11-09T10:57:54Z"
+      message: Deployment config has minimum availability.
+      status: "True"
+      type: Available
+    details:
+      causes:
+      - imageTrigger:
+          from:
+            kind: DockerImage
+            name: image-registry.openshift-image-registry.svc:5000/robotdance/dance-rules-native@sha256:7178dc1865e9351c64391de9f718bf240af305623f20ef937d4bcb139d8aa8eb
+        type: ImageChange
+      message: image change
+    latestVersion: 2
+    observedGeneration: 3
+    readyReplicas: 1
+    replicas: 1
+    unavailableReplicas: 0
+    updatedReplicas: 1
+- apiVersion: apps.openshift.io/v1
+  kind: DeploymentConfig
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: "2019-11-08T01:57:36Z"
+    generation: 13
+    labels:
+      app: dance-translate
+    name: dance-translate
+    namespace: robotdance
+    resourceVersion: "2881636"
+    selfLink: /apis/apps.openshift.io/v1/namespaces/robotdance/deploymentconfigs/dance-translate
+    uid: 230ca241-01cb-11ea-ae2b-0a580a80000c
+  spec:
+    replicas: 1
+    revisionHistoryLimit: 10
+    selector:
+      app: dance-translate
+      deploymentconfig: dance-translate
+    strategy:
+      activeDeadlineSeconds: 21600
+      resources: {}
+      rollingParams:
+        intervalSeconds: 1
+        maxSurge: 25%
+        maxUnavailable: 25%
+        timeoutSeconds: 600
+        updatePeriodSeconds: 1
+      type: Rolling
+    template:
+      metadata:
+        annotations:
+          openshift.io/generated-by: OpenShiftNewApp
+        creationTimestamp: null
+        labels:
+          app: dance-translate
+          deploymentconfig: dance-translate
+      spec:
+        containers:
+        - envFrom:
+          - configMapRef:
+              name: robottranslate
+          image: image-registry.openshift-image-registry.svc:5000/robotdance/dance-translate@sha256:f14d91fdf5f45964b9ff800b117270ddfb8adeb352a4b0017f1ccbcc33263f2f
+          imagePullPolicy: Always
+          name: dance-translate
+          ports:
+          - containerPort: 8080
+            protocol: TCP
+          - containerPort: 8443
+            protocol: TCP
+          - containerPort: 8778
+            protocol: TCP
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+    test: false
+    triggers:
+    - type: ConfigChange
+    - imageChangeParams:
+        automatic: true
+        containerNames:
+        - dance-translate
+        from:
+          kind: ImageStreamTag
+          name: dance-translate:latest
+          namespace: robotdance
+        lastTriggeredImage: image-registry.openshift-image-registry.svc:5000/robotdance/dance-translate@sha256:f14d91fdf5f45964b9ff800b117270ddfb8adeb352a4b0017f1ccbcc33263f2f
+      type: ImageChange
+  status:
+    availableReplicas: 1
+    conditions:
+    - lastTransitionTime: "2019-11-09T06:29:22Z"
+      lastUpdateTime: "2019-11-09T06:29:28Z"
+      message: replication controller "dance-translate-12" successfully rolled out
+      reason: NewReplicationControllerAvailable
+      status: "True"
+      type: Progressing
+    - lastTransitionTime: "2019-11-09T10:58:03Z"
+      lastUpdateTime: "2019-11-09T10:58:03Z"
+      message: Deployment config has minimum availability.
+      status: "True"
+      type: Available
+    details:
+      causes:
+      - imageTrigger:
+          from:
+            kind: DockerImage
+            name: image-registry.openshift-image-registry.svc:5000/robotdance/dance-translate@sha256:f14d91fdf5f45964b9ff800b117270ddfb8adeb352a4b0017f1ccbcc33263f2f
+        type: ImageChange
+      message: image change
+    latestVersion: 12
+    observedGeneration: 13
+    readyReplicas: 1
+    replicas: 1
+    unavailableReplicas: 0
+    updatedReplicas: 1
+- apiVersion: apps.openshift.io/v1
+  kind: DeploymentConfig
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: "2019-11-08T01:15:32Z"
+    generation: 8
+    labels:
+      app: danceui
+    name: danceui
+    namespace: robotdance
+    resourceVersion: "2889614"
+    selfLink: /apis/apps.openshift.io/v1/namespaces/robotdance/deploymentconfigs/danceui
+    uid: 429c68a8-01c5-11ea-ae2b-0a580a80000c
+  spec:
+    replicas: 1
+    revisionHistoryLimit: 10
+    selector:
+      app: danceui
+      deploymentconfig: danceui
+    strategy:
+      activeDeadlineSeconds: 21600
+      resources: {}
+      rollingParams:
+        intervalSeconds: 1
+        maxSurge: 25%
+        maxUnavailable: 25%
+        timeoutSeconds: 600
+        updatePeriodSeconds: 1
+      type: Rolling
+    template:
+      metadata:
+        annotations:
+          openshift.io/generated-by: OpenShiftNewApp
+        creationTimestamp: null
+        labels:
+          app: danceui
+          deploymentconfig: danceui
+      spec:
+        containers:
+        - image: image-registry.openshift-image-registry.svc:5000/robotdance/danceui@sha256:4de4400554d86fcbc4793a9b5b4959f477aadae8c7bede4db4eb93fad4723df5
+          imagePullPolicy: Always
+          name: danceui
+          ports:
+          - containerPort: 8080
+            protocol: TCP
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+    test: false
+    triggers:
+    - type: ConfigChange
+    - imageChangeParams:
+        automatic: true
+        containerNames:
+        - danceui
+        from:
+          kind: ImageStreamTag
+          name: danceui:latest
+          namespace: robotdance
+        lastTriggeredImage: image-registry.openshift-image-registry.svc:5000/robotdance/danceui@sha256:4de4400554d86fcbc4793a9b5b4959f477aadae8c7bede4db4eb93fad4723df5
+      type: ImageChange
+  status:
+    availableReplicas: 1
+    conditions:
+    - lastTransitionTime: "2019-11-09T10:58:02Z"
+      lastUpdateTime: "2019-11-09T10:58:02Z"
+      message: Deployment config has minimum availability.
+      status: "True"
+      type: Available
+    - lastTransitionTime: "2019-11-09T11:14:26Z"
+      lastUpdateTime: "2019-11-09T11:14:29Z"
+      message: replication controller "danceui-7" successfully rolled out
+      reason: NewReplicationControllerAvailable
+      status: "True"
+      type: Progressing
+    details:
+      causes:
+      - imageTrigger:
+          from:
+            kind: DockerImage
+            name: image-registry.openshift-image-registry.svc:5000/robotdance/danceui@sha256:4de4400554d86fcbc4793a9b5b4959f477aadae8c7bede4db4eb93fad4723df5
+        type: ImageChange
+      message: image change
+    latestVersion: 7
+    observedGeneration: 8
+    readyReplicas: 1
+    replicas: 1
+    unavailableReplicas: 0
+    updatedReplicas: 1
+- apiVersion: apps.openshift.io/v1
+  kind: DeploymentConfig
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: "2019-11-08T03:02:03Z"
+    generation: 9
+    labels:
+      app: dancingrobot
+    name: dancingrobot
+    namespace: robotdance
+    resourceVersion: "2881578"
+    selfLink: /apis/apps.openshift.io/v1/namespaces/robotdance/deploymentconfigs/dancingrobot
+    uid: 23f5aff7-01d4-11ea-ae2b-0a580a80000c
+  spec:
+    replicas: 1
+    revisionHistoryLimit: 10
+    selector:
+      app: dancingrobot
+      deploymentconfig: dancingrobot
+    strategy:
+      activeDeadlineSeconds: 21600
+      resources: {}
+      rollingParams:
+        intervalSeconds: 1
+        maxSurge: 25%
+        maxUnavailable: 25%
+        timeoutSeconds: 600
+        updatePeriodSeconds: 1
+      type: Rolling
+    template:
+      metadata:
+        annotations:
+          openshift.io/generated-by: OpenShiftNewApp
+        creationTimestamp: null
+        labels:
+          app: dancingrobot
+          deploymentconfig: dancingrobot
+      spec:
+        containers:
+        - image: image-registry.openshift-image-registry.svc:5000/robotdance/dancingrobot@sha256:1697c1d2b2c8e1b11721aa12aaf9e02a6d8e84a13b3618da7c88a6b40dafa724
+          imagePullPolicy: Always
+          name: dancingrobot
+          ports:
+          - containerPort: 8080
+            protocol: TCP
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+    test: false
+    triggers:
+    - type: ConfigChange
+    - imageChangeParams:
+        automatic: true
+        containerNames:
+        - dancingrobot
+        from:
+          kind: ImageStreamTag
+          name: dancingrobot:latest
+          namespace: robotdance
+        lastTriggeredImage: image-registry.openshift-image-registry.svc:5000/robotdance/dancingrobot@sha256:1697c1d2b2c8e1b11721aa12aaf9e02a6d8e84a13b3618da7c88a6b40dafa724
+      type: ImageChange
+  status:
+    availableReplicas: 1
+    conditions:
+    - lastTransitionTime: "2019-11-08T15:43:16Z"
+      lastUpdateTime: "2019-11-08T15:43:18Z"
+      message: replication controller "dancingrobot-6" successfully rolled out
+      reason: NewReplicationControllerAvailable
+      status: "True"
+      type: Progressing
+    - lastTransitionTime: "2019-11-09T10:58:01Z"
+      lastUpdateTime: "2019-11-09T10:58:01Z"
+      message: Deployment config has minimum availability.
+      status: "True"
+      type: Available
+    details:
+      causes:
+      - imageTrigger:
+          from:
+            kind: DockerImage
+            name: image-registry.openshift-image-registry.svc:5000/robotdance/dancingrobot@sha256:1697c1d2b2c8e1b11721aa12aaf9e02a6d8e84a13b3618da7c88a6b40dafa724
+        type: ImageChange
+      message: image change
+    latestVersion: 6
+    observedGeneration: 9
+    readyReplicas: 1
+    replicas: 1
+    unavailableReplicas: 0
+    updatedReplicas: 1
+- apiVersion: apps.openshift.io/v1
+  kind: DeploymentConfig
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: "2019-11-07T14:01:10Z"
+    generation: 3
+    labels:
+      app: quarkus-jvm-demo
+    name: quarkus-jvm-demo
+    namespace: robotdance
+    resourceVersion: "2142442"
+    selfLink: /apis/apps.openshift.io/v1/namespaces/robotdance/deploymentconfigs/quarkus-jvm-demo
+    uid: 0d3493ca-0167-11ea-91cd-0a580a8001de
+  spec:
+    replicas: 0
+    revisionHistoryLimit: 10
+    selector:
+      app: quarkus-jvm-demo
+      deploymentconfig: quarkus-jvm-demo
+    strategy:
+      activeDeadlineSeconds: 21600
+      resources: {}
+      rollingParams:
+        intervalSeconds: 1
+        maxSurge: 25%
+        maxUnavailable: 25%
+        timeoutSeconds: 600
+        updatePeriodSeconds: 1
+      type: Rolling
+    template:
+      metadata:
+        annotations:
+          openshift.io/generated-by: OpenShiftNewApp
+        creationTimestamp: null
+        labels:
+          app: quarkus-jvm-demo
+          deploymentconfig: quarkus-jvm-demo
+      spec:
+        containers:
+        - env:
+          - name: JAVA_APP_JAR
+            value: getting-started-1.0-SNAPSHOT-runner.jar
+          - name: JAVA_OPTIONS
+            value: -Dquarkus.http.host=0.0.0.0
+          image: image-registry.openshift-image-registry.svc:5000/robotdance/quarkus-jvm-demo@sha256:56be4b8f69560043b1cbb4c12a96d236265520aef7bb69af5b03d5a51691f205
+          imagePullPolicy: Always
+          name: quarkus-jvm-demo
+          ports:
+          - containerPort: 8080
+            protocol: TCP
+          - containerPort: 8443
+            protocol: TCP
+          - containerPort: 8778
+            protocol: TCP
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+    test: false
+    triggers:
+    - type: ConfigChange
+    - imageChangeParams:
+        automatic: true
+        containerNames:
+        - quarkus-jvm-demo
+        from:
+          kind: ImageStreamTag
+          name: quarkus-jvm-demo:latest
+          namespace: robotdance
+        lastTriggeredImage: image-registry.openshift-image-registry.svc:5000/robotdance/quarkus-jvm-demo@sha256:56be4b8f69560043b1cbb4c12a96d236265520aef7bb69af5b03d5a51691f205
+      type: ImageChange
+  status:
+    availableReplicas: 0
+    conditions:
+    - lastTransitionTime: "2019-11-07T14:35:10Z"
+      lastUpdateTime: "2019-11-07T14:35:10Z"
+      message: replication controller "quarkus-jvm-demo-1" successfully rolled out
+      reason: NewReplicationControllerAvailable
+      status: "True"
+      type: Progressing
+    - lastTransitionTime: "2019-11-08T04:19:17Z"
+      lastUpdateTime: "2019-11-08T04:19:17Z"
+      message: Deployment config does not have minimum availability.
+      status: "False"
+      type: Available
+    details:
+      causes:
+      - type: ConfigChange
+      message: config change
+    latestVersion: 1
+    observedGeneration: 3
+    replicas: 0
+    unavailableReplicas: 0
+    updatedReplicas: 0
+kind: List
+metadata:
+  resourceVersion: ""
+  selfLink: ""
