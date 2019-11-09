@@ -1,0 +1,8 @@
+com\redhat\demo\robotservice\Header.class
+com\redhat\demo\robotservice\model\Command.class
+com\redhat\demo\robotservice\ProxyTestService.class
+com\redhat\demo\robotservice\rest\Listener.class
+com\redhat\demo\robotservice\rest\RobotEndPoint.class
+com\redhat\demo\robotservice\LocalRobotProxyService$1.class
+com\redhat\demo\robotservice\LocalRobotProxyService.class
+com\redhat\demo\robotservice\model\Cmd.class

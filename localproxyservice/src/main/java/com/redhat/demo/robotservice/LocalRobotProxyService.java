@@ -55,7 +55,8 @@ put("CRI-O", "http://192.168.0.10/rpc/Robot.Cmd");
         System.out.println(command.toString());
         String baseURL = robotNames.get(command.getRobotName());
 
-        String commandToSend = String.format("{ \"cmd\" : \"%s;\" }", command.getCmdString());
+        // String commandToSend = String.format("{ \"cmd\" : \"%s;\" }", command.getCmdString());
+        String commandToSend = String.format("{ \"angle\":-0.008147321428571426,\"throttle\":0.017633928571428575, \"drive_mode\":\"user\",\"recording\":true}");
         System.out.println("Using url:" + baseURL + " command: " + commandToSend);
         Cmd cmd = new Cmd();
         cmd.setCmd(commandToSend);
