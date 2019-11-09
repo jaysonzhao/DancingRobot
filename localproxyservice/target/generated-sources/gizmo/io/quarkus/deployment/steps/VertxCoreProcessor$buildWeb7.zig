@@ -48,30 +48,54 @@ Method deploy_0 : V
     ALOAD 2
     LDC (Integer) 1
     AALOAD
+<<<<<<< HEAD
     ASTORE 6
+=======
+    ASTORE 7
+>>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     ALOAD 1
     LDC (String) "io.quarkus.runtime.ShutdownContext"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
+<<<<<<< HEAD
     ASTORE 5
     LDC (String) "NORMAL"
     // Method descriptor: (Ljava/lang/String;)Lio/quarkus/runtime/LaunchMode;
     INVOKESTATIC io/quarkus/runtime/LaunchMode#valueOf
     ASTORE 7
+=======
+    ASTORE 6
+    LDC (String) "NORMAL"
+    // Method descriptor: (Ljava/lang/String;)Lio/quarkus/runtime/LaunchMode;
+    INVOKESTATIC io/quarkus/runtime/LaunchMode#valueOf
+    ASTORE 5
+>>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     ALOAD 2
     LDC (Integer) 0
     AALOAD
     CHECKCAST io/quarkus/vertx/core/runtime/VertxCoreRecorder
+<<<<<<< HEAD
     ALOAD 6
     CHECKCAST io/quarkus/vertx/core/runtime/config/VertxConfiguration
     ALOAD 5
     CHECKCAST io/quarkus/runtime/ShutdownContext
     ALOAD 7
+=======
+    ALOAD 7
+    CHECKCAST io/quarkus/vertx/core/runtime/config/VertxConfiguration
+    ALOAD 6
+    CHECKCAST io/quarkus/runtime/ShutdownContext
+    ALOAD 5
+>>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     // Method descriptor: (Lio/quarkus/vertx/core/runtime/config/VertxConfiguration;Lio/quarkus/runtime/ShutdownContext;Lio/quarkus/runtime/LaunchMode;)Lio/quarkus/runtime/RuntimeValue;
     INVOKEVIRTUAL io/quarkus/vertx/core/runtime/VertxCoreRecorder#initializeWeb
     ASTORE 8
     ALOAD 1
+<<<<<<< HEAD
     LDC (String) "proxykey16"
+=======
+    LDC (String) "proxykey24"
+>>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     ALOAD 8
     // Method descriptor: (Ljava/lang/String;Ljava/lang/Object;)V
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#putValue

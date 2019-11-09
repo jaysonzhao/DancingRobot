@@ -46,10 +46,17 @@ Method deploy_0 : V
     ALOAD 4
     AASTORE
     ALOAD 1
+<<<<<<< HEAD
     LDC (String) "proxykey16"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
     ASTORE 6
+=======
+    LDC (String) "proxykey24"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
+    INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
+    ASTORE 5
+>>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     ALOAD 1
     LDC (String) "io.quarkus.runtime.ShutdownContext"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
@@ -62,6 +69,7 @@ Method deploy_0 : V
     LDC (String) "NORMAL"
     // Method descriptor: (Ljava/lang/String;)Lio/quarkus/runtime/LaunchMode;
     INVOKESTATIC io/quarkus/runtime/LaunchMode#valueOf
+<<<<<<< HEAD
     ASTORE 11
     LDC (Boolean) false
     // Method descriptor: (Z)Ljava/lang/Boolean;
@@ -71,6 +79,17 @@ Method deploy_0 : V
     // Method descriptor: (Z)Ljava/lang/Boolean;
     INVOKESTATIC java/lang/Boolean#valueOf
     ASTORE 5
+=======
+    ASTORE 10
+    LDC (Boolean) false
+    // Method descriptor: (Z)Ljava/lang/Boolean;
+    INVOKESTATIC java/lang/Boolean#valueOf
+    ASTORE 6
+    LDC (Boolean) true
+    // Method descriptor: (Z)Ljava/lang/Boolean;
+    INVOKESTATIC java/lang/Boolean#valueOf
+    ASTORE 11
+>>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     ALOAD 1
     LDC (String) "proxykey22"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
@@ -80,18 +99,31 @@ Method deploy_0 : V
     LDC (Integer) 0
     AALOAD
     CHECKCAST io/quarkus/vertx/http/runtime/VertxHttpRecorder
+<<<<<<< HEAD
     ALOAD 6
+=======
+    ALOAD 5
+>>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     CHECKCAST io/quarkus/runtime/RuntimeValue
     ALOAD 9
     CHECKCAST io/quarkus/runtime/ShutdownContext
     ALOAD 7
     CHECKCAST io/quarkus/vertx/http/runtime/HttpConfiguration
+<<<<<<< HEAD
     ALOAD 11
     ALOAD 10
     CHECKCAST java/lang/Boolean
     // Method descriptor: ()Z
     INVOKEVIRTUAL java/lang/Boolean#booleanValue
     ALOAD 5
+=======
+    ALOAD 10
+    ALOAD 6
+    CHECKCAST java/lang/Boolean
+    // Method descriptor: ()Z
+    INVOKEVIRTUAL java/lang/Boolean#booleanValue
+    ALOAD 11
+>>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     CHECKCAST java/lang/Boolean
     // Method descriptor: ()Z
     INVOKEVIRTUAL java/lang/Boolean#booleanValue
@@ -101,7 +133,11 @@ Method deploy_0 : V
     INVOKEVIRTUAL io/quarkus/vertx/http/runtime/VertxHttpRecorder#initializeRouter
     ASTORE 12
     ALOAD 1
+<<<<<<< HEAD
     LDC (String) "proxykey31"
+=======
+    LDC (String) "proxykey27"
+>>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     ALOAD 12
     // Method descriptor: (Ljava/lang/String;Ljava/lang/Object;)V
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#putValue

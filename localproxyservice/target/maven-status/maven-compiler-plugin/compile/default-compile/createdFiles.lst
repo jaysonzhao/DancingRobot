@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 com\redhat\demo\robotservice\Header.class
 com\redhat\demo\robotservice\model\Command.class
 com\redhat\demo\robotservice\ProxyTestService.class
@@ -6,3 +7,13 @@ com\redhat\demo\robotservice\rest\RobotEndPoint.class
 com\redhat\demo\robotservice\LocalRobotProxyService$1.class
 com\redhat\demo\robotservice\LocalRobotProxyService.class
 com\redhat\demo\robotservice\model\Cmd.class
+=======
+com/redhat/demo/robotservice/LocalRobotProxyService.class
+com/redhat/demo/robotservice/model/Command.class
+com/redhat/demo/robotservice/Header.class
+com/redhat/demo/robotservice/LocalRobotProxyService$1.class
+com/redhat/demo/robotservice/model/Cmd.class
+com/redhat/demo/robotservice/rest/Listener.class
+com/redhat/demo/robotservice/ProxyTestService.class
+com/redhat/demo/robotservice/rest/RobotEndPoint.class
+>>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9

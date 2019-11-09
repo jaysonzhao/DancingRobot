@@ -283,6 +283,7 @@ Method deploy_0 : V
     LDC (Boolean) true
     // Method descriptor: (Z)Ljava/lang/Boolean;
     INVOKESTATIC java/lang/Boolean#valueOf
+<<<<<<< HEAD
     ASTORE 9
     ALOAD 2
     LDC (Integer) 2
@@ -292,10 +293,22 @@ Method deploy_0 : V
     LDC (Integer) 4
     AALOAD
     ASTORE 8
+=======
+    ASTORE 10
+    ALOAD 2
+    LDC (Integer) 2
+    AALOAD
+    ASTORE 8
+    ALOAD 2
+    LDC (Integer) 4
+    AALOAD
+    ASTORE 9
+>>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     ALOAD 2
     LDC (Integer) 0
     AALOAD
     CHECKCAST io/quarkus/restclient/runtime/RestClientRecorder
+<<<<<<< HEAD
     ALOAD 9
     CHECKCAST java/lang/Boolean
     // Method descriptor: ()Z
@@ -304,6 +317,16 @@ Method deploy_0 : V
     CHECKCAST java/util/Set
     ALOAD 8
     CHECKCAST java/util/Set
+=======
+    ALOAD 10
+    CHECKCAST java/lang/Boolean
+    // Method descriptor: ()Z
+    INVOKEVIRTUAL java/lang/Boolean#booleanValue
+    ALOAD 8
+    CHECKCAST java/util/Set
+    ALOAD 9
+    CHECKCAST java/util/Set
+>>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     // Method descriptor: (ZLjava/util/Set;Ljava/util/Set;)V
     INVOKEVIRTUAL io/quarkus/restclient/runtime/RestClientRecorder#initializeResteasyProviderFactory
     RETURN

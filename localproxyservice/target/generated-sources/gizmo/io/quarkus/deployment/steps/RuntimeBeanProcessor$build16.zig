@@ -60,7 +60,11 @@ Method deploy_0 : V
     AALOAD
     ASTORE 5
     ALOAD 1
+<<<<<<< HEAD
     LDC (String) "proxykey31"
+=======
+    LDC (String) "proxykey30"
+>>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
     ASTORE 4
@@ -72,7 +76,11 @@ Method deploy_0 : V
     INVOKEINTERFACE java/util/Map#put
     POP
     ALOAD 1
+<<<<<<< HEAD
     LDC (String) "proxykey16"
+=======
+    LDC (String) "proxykey20"
+>>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
     ASTORE 6
@@ -84,7 +92,11 @@ Method deploy_0 : V
     INVOKEINTERFACE java/util/Map#put
     POP
     ALOAD 1
+<<<<<<< HEAD
     LDC (String) "proxykey19"
+=======
+    LDC (String) "proxykey21"
+>>>>>>> b6ec6c9442996a0add0875e40a2f7ab0a5a060f9
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
     ASTORE 7
