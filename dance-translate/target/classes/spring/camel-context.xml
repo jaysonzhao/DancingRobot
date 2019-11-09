@@ -33,7 +33,7 @@
             <setHeader headerName="Access-Control-Allow-Headers" id="_setHeader7">
                 <constant>x-requested-with</constant>
             </setHeader>
-            <transform id="_transform1">
+            <transform id="_transform1"> 
                 <constant>OK</constant>
             </transform>
         </route>
