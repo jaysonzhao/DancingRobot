@@ -49,7 +49,8 @@ var s = function( p5o ) { // p could be any variable name
     soundFileMap["YouShookMeAllNightLong.m4a"] = p5o.loadSound('YouShookMeAllNightLong.m4a');
     soundFileMap["UptownFunk.m4a"] = p5o.loadSound('UptownFunk.m4a');
     soundFileMap["HighRatedGabruRemix.m4a"] = p5o.loadSound('HighRatedGabruRemix.m4a');
-    soundFile = soundFileMap["YouShookMeAllNightLong.m4a"];
+	soundFileMap["yelangdisco.m4a"] = p5o.loadSound('yelangdisco.m4a');
+    soundFile = soundFileMap["yelangdisco.m4a"];
   };
    p5o.setup = function() {
     var canvas = p5o.createCanvas(500, 240); 
