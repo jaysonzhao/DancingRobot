@@ -129,8 +129,8 @@ def train_data(data, experimentName):
     train_y = train[["quality"]]
     test_y = test[["quality"]]
 
-    # alpha = float(sys.argv[1]) if len(sys.argv) > 1 else 1.0
-    # l1_ratio = float(sys.argv[2]) if len(sys.argv) > 2 else 1.0
+    alpha = float(sys.argv[1]) if len(sys.argv) > 1 else 1.0
+    l1_ratio = float(sys.argv[2]) if len(sys.argv) > 2 else 1.0
 
     with mlflow.start_run():
         global lr 
