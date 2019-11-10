@@ -20,6 +20,10 @@ route.route.openshift.io/mlflow-tracking-operator exposed
 oc new-app python~https://github.com/jaysonzhao/DancingRobot.git#master --context-dir=dance-ml
 oc expose svc/dancingrobot
 
+oc new-app --name=dancemla python~https://github.com/jaysonzhao/DancingRobot.git#master --context-dir=dance-ml-a
+
+oc set route-backends dancingrobot dancingrobot=100 dancemla=0
+
 ###############################################################
 # Install the Rules in Java (and Quarkus for comparison
 
