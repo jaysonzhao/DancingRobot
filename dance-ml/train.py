@@ -142,12 +142,12 @@ def train_data(data, experimentName):
 
         (rmse, mae, r2) = eval_metrics(test_y, predicted_qualities)
 
-        print("Bayesian model :" lr)
+        print("Bayesian model :",  lr)
         print("  RMSE: %s" % rmse)
         print("  MAE: %s" % mae)
         print("  R2: %s" % r2)
 
-        mlflow.log_param("alpha", alpha)
+        
         mlflow.log_metric("rmse", rmse)
         mlflow.log_metric("r2", r2)
         mlflow.log_metric("mae", mae)
