@@ -11,9 +11,9 @@ oc create -f mlflow-tracking-operator/deploy/operator.yaml
 #
 oc create -f mlflow-tracking-operator/deploy/crds/ai_v1alpha1_trackingserver_cr.yaml
 #
-# Once done, expose the route so the mlflow tracking ui can be displayed
-oc expose svc/mlflow-tracking-operator
-route.route.openshift.io/mlflow-tracking-operator exposed
+# Once done, expose the route so the mlflow tracking ui can be displayed,here should expose the tracking server svc
+oc expose svc/zak-tracking-server-svc
+
 
 ##################################################################
 # Install the ML Flow service to train models and provide prediction
