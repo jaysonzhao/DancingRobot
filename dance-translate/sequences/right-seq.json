@@ -73,4 +73,9 @@
     "robotName": "P_NAME",
     "cmdString": "left"
 }
+,
+{
+    "robotName": "P_NAME",
+    "cmdString": "stop"
+}
     ]
